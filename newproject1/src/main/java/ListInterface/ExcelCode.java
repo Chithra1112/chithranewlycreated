@@ -18,10 +18,10 @@ public static String getIntegerData(int a,int b) throws IOException
 {
 	f=new FileInputStream("C:\\Users\\SIJU\\Desktop\\Book1.xlsx");
 	w=new XSSFWorkbook(f);
-	sh=w.getSheet("sheet1");
+	sh=w.getSheet("sheet1");//to open the sheet we need.
 	Row r=sh.getRow(a);
 	Cell c=r.getCell(b);
-	int x=(int) c.getNumericCellValue();
+	int x=(int) c.getNumericCellValue();//get value from the cell
 	return String.valueOf(x);
 	
 }
