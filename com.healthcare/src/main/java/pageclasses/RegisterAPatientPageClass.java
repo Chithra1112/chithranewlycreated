@@ -197,7 +197,7 @@ public class RegisterAPatientPageClass {
 	}
 	
 	public void clickOnStartAVisitConfirm() {
-		explicitWait.elementToBeClickableWait(driver,startAVisitConfirm);
+		explicitWait.presenceOfElementLocatedWait(driver,startAVisitConfirm);
 		gl.clickOnElement(startAVisitConfirm);
 	}
 	
