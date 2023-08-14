@@ -8,12 +8,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.ExcelReadClass;
+import utilities.ExplicitWaitClass;
 import utilities.GeneralUtilities;
 
 public class RegisterAPatientPageClass {
 	WebDriver driver;
 
 	GeneralUtilities gl = new GeneralUtilities();
+	ExplicitWaitClass explicitWait=new ExplicitWaitClass();
 
 	public RegisterAPatientPageClass(WebDriver driver) {
 		this.driver = driver;
@@ -195,6 +197,7 @@ public class RegisterAPatientPageClass {
 	}
 	
 	public void clickOnStartAVisitConfirm() {
+		explicitWait.elementToBeClickableWait(driver,startAVisitConfirm);
 		gl.clickOnElement(startAVisitConfirm);
 	}
 	

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.healthcare.executePageClasses.HomepageTestClass">
+      <class name="com.healthcare.executePageClasses.CaptureVitalsOfPatientTestClass">
         <methods>
-          <include name="verifyAllTilesAreDisplayedInHomepage"/>
           <include name="beforeMethod"/>
+          <include name="verifyAllAddVitalDetailsOfRegisteredPatient"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.healthcare.executePageClasses.HomepageTestClass -->
+      </class> <!-- com.healthcare.executePageClasses.CaptureVitalsOfPatientTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
