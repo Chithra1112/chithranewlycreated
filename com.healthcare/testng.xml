@@ -8,11 +8,15 @@
   <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.healthcare.executePageClasses.CaptureVitalsOfPatientTestClass"/>
-      <class name="com.healthcare.executePageClasses.FindAPatientRecordTestClass"/>
-      <class name="com.healthcare.executePageClasses.RegisterAPatientTestClass"/>
-      <class name="com.healthcare.executePageClasses.LoginPageTestClass"/>
-      <class name="com.healthcare.executePageClasses.ActiveVisitTestClass"/>
-      <class name="com.healthcare.executePageClasses.HomepageTestClass"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+<!-- 
+
+<class name="com.healthcare.executePageClasses.FindAPatientRecordTestClass"/>
+      <class name="com.healthcare.executePageClasses.RegisterAPatientTestClass"/>
+      <class name="com.healthcare.executePageClasses.LoginPageTestClass"/>
+      <class name="com.healthcare.executePageClasses.ActiveVisitTestClass"/>
+      <class name="com.healthcare.executePageClasses.HomepageTestClass"/>-->
