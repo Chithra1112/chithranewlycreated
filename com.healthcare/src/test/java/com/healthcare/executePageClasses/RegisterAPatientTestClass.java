@@ -9,6 +9,7 @@ import pageclasses.FindAPatientRecordPageClass;
 import pageclasses.HomePageClass;
 import pageclasses.LoginPageClass;
 import pageclasses.RegisterAPatientPageClass;
+import retry.RetryAnalyzer;
 
 public class RegisterAPatientTestClass extends BaseClass {
 	LoginPageClass lp;
@@ -16,7 +17,7 @@ public class RegisterAPatientTestClass extends BaseClass {
 	RegisterAPatientPageClass rp;
 	FindAPatientRecordPageClass fp;
 
-	@Test(dataProviderClass=DataProviderClassOne.class,dataProvider="login")
+	@Test(dataProviderClass=DataProviderClassOne.class,dataProvider="login",retryAnalyzer = RetryAnalyzer.class)
 	
 	public void verifyToRegisterAPatient(String uname,String paswrd) throws IOException{
 		
@@ -58,7 +59,7 @@ public class RegisterAPatientTestClass extends BaseClass {
 		Assert.assertEquals(actualOutcome,expectedOutcome);
 	}
 	
-	@Test(dataProviderClass=DataProviderClassOne.class,dataProvider="login")
+	@Test(dataProviderClass=DataProviderClassOne.class,dataProvider="login",retryAnalyzer = RetryAnalyzer.class)
 	
 	public void verifyToDeleteARegisteredPatient(String uname,String paswrd) throws IOException{
 		

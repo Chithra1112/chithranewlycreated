@@ -8,13 +8,14 @@ import org.testng.annotations.Test;
 
 import pageclasses.HomePageClass;
 import pageclasses.LoginPageClass;
+import retry.RetryAnalyzer;
 
 public class LoginPageTestClass extends BaseClass {
  
 	LoginPageClass lp;
 	HomePageClass hp;
 	
-@Test(dataProviderClass = DataProviderClassOne.class,dataProvider = "dp")
+@Test(dataProviderClass = DataProviderClassOne.class,dataProvider = "dp",retryAnalyzer = RetryAnalyzer.class,groups = {"group2"})
 public void verifyUnsuccessfullLogin(String uname,String paswrd){
 		lp=new LoginPageClass(driver);
 		lp.logInAsRegistrationDesk(uname, paswrd);
@@ -28,7 +29,7 @@ public void verifyUnsuccessfullLogin(String uname,String paswrd){
 
 }
 
-@Test(dataProviderClass = DataProviderClassOne.class,dataProvider = "login")
+@Test(dataProviderClass = DataProviderClassOne.class,dataProvider = "login",retryAnalyzer = RetryAnalyzer.class,groups = {"group2"})
 public void verifySuccessfullLogin(String uname,String paswrd){
 	lp=new LoginPageClass(driver);
 	lp.logInAsRegistrationDesk(uname, paswrd);
@@ -42,7 +43,7 @@ public void verifySuccessfullLogin(String uname,String paswrd){
 	
 }
 
-@Test(dataProviderClass = DataProviderClassOne.class,dataProvider = "login")
+@Test(dataProviderClass = DataProviderClassOne.class,dataProvider = "login",retryAnalyzer = RetryAnalyzer.class,groups = {"group1"})
 
 public void verifyTheLogoIsDisplayedOrNotInHomePage(String uname,String paswrd) {
 	
@@ -56,7 +57,7 @@ public void verifyTheLogoIsDisplayedOrNotInHomePage(String uname,String paswrd) 
 	Assert.assertTrue(actualResult);
 	
 }
-@Test(dataProviderClass=DataProviderClassOne.class,dataProvider="login") 
+@Test(dataProviderClass=DataProviderClassOne.class,dataProvider="login",groups = {"group1"}) 
 
 public void verifyTheCorrectSiteIsLoadedWhileHittingTheURL(String uname,String paswrd) throws IOException {
 	

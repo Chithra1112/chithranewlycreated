@@ -9,6 +9,7 @@ import pageclasses.FindAPatientRecordPageClass;
 import pageclasses.HomePageClass;
 import pageclasses.LoginPageClass;
 import pageclasses.RegisterAPatientPageClass;
+import retry.RetryAnalyzer;
 
 public class FindAPatientRecordTestClass extends BaseClass {
 
@@ -17,7 +18,7 @@ public class FindAPatientRecordTestClass extends BaseClass {
 	RegisterAPatientPageClass rp;
 	FindAPatientRecordPageClass fp;
 
-	@Test(dataProviderClass = DataProviderClassOne.class, dataProvider = "login")
+	@Test(dataProviderClass = DataProviderClassOne.class, dataProvider = "login",retryAnalyzer = RetryAnalyzer.class,groups = {"group2"})
 	public void verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(String uname, String paswrd)
 			throws IOException {
 

@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results retried="5" ignored="1" total="13" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-14T20:52:03 IST" name="Default suite" finished-at="2023-08-14T20:52:56 IST" duration-ms="53365">
+  <suite started-at="2023-08-22T20:48:14 IST" name="Suite" finished-at="2023-08-22T20:50:32 IST" duration-ms="137883">
     <groups>
+      <group name="group2">
+        <method signature="FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" name="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable" class="com.healthcare.executePageClasses.FindAPatientRecordTestClass"/>
+        <method signature="LoginPageTestClass.verifySuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" name="verifySuccessfullLogin" class="com.healthcare.executePageClasses.LoginPageTestClass"/>
+        <method signature="LoginPageTestClass.verifyUnsuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" name="verifyUnsuccessfullLogin" class="com.healthcare.executePageClasses.LoginPageTestClass"/>
+      </group> <!-- group2 -->
+      <group name="group1">
+        <method signature="LoginPageTestClass.verifyTheCorrectSiteIsLoadedWhileHittingTheURL(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" name="verifyTheCorrectSiteIsLoadedWhileHittingTheURL" class="com.healthcare.executePageClasses.LoginPageTestClass"/>
+        <method signature="LoginPageTestClass.verifyTheLogoIsDisplayedOrNotInHomePage(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" name="verifyTheLogoIsDisplayedOrNotInHomePage" class="com.healthcare.executePageClasses.LoginPageTestClass"/>
+      </group> <!-- group1 -->
     </groups>
-    <test started-at="2023-08-14T20:52:03 IST" name="Default test" finished-at="2023-08-14T20:52:56 IST" duration-ms="53365">
-      <class name="com.healthcare.executePageClasses.ActiveVisitTestClass">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.healthcare.executePageClasses.ActiveVisitTestClass@14028087]" started-at="2023-08-14T20:52:03 IST" name="beforeMethod" finished-at="2023-08-14T20:52:12 IST" duration-ms="8147" status="PASS">
+    <test started-at="2023-08-22T20:48:14 IST" name="Test" finished-at="2023-08-22T20:50:32 IST" duration-ms="137883">
+      <class name="com.healthcare.executePageClasses.LoginPageTestClass">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:49:38 IST" name="beforeMethod" finished-at="2023-08-22T20:49:44 IST" duration-ms="6044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.ActiveVisitTestClass@14028087]" started-at="2023-08-14T20:52:12 IST" name="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted" data-provider="login" finished-at="2023-08-14T20:52:56 IST" duration-ms="44304" status="PASS">
+        <test-method signature="verifySuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:49:44 IST" name="verifySuccessfullLogin" data-provider="login" finished-at="2023-08-22T20:49:46 IST" duration-ms="2661" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,12 +42,702 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.healthcare.executePageClasses.ActiveVisitTestClass@14028087]" started-at="2023-08-14T20:52:56 IST" name="afterMethod" finished-at="2023-08-14T20:52:56 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- verifySuccessfullLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:49:46 IST" name="afterMethod" finished-at="2023-08-22T20:49:47 IST" duration-ms="136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySuccessfullLogin status=SUCCESS method=LoginPageTestClass.verifySuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.healthcare.executePageClasses.ActiveVisitTestClass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:49:47 IST" name="beforeMethod" finished-at="2023-08-22T20:49:55 IST" duration-ms="8768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTheCorrectSiteIsLoadedWhileHittingTheURL(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:49:55 IST" name="verifyTheCorrectSiteIsLoadedWhileHittingTheURL" data-provider="login" finished-at="2023-08-22T20:49:57 IST" duration-ms="2117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheCorrectSiteIsLoadedWhileHittingTheURL -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:49:58 IST" name="afterMethod" finished-at="2023-08-22T20:49:58 IST" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheCorrectSiteIsLoadedWhileHittingTheURL status=SUCCESS method=LoginPageTestClass.verifyTheCorrectSiteIsLoadedWhileHittingTheURL(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:49:58 IST" name="beforeMethod" finished-at="2023-08-22T20:50:04 IST" duration-ms="6106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTheLogoIsDisplayedOrNotInHomePage(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:50:04 IST" name="verifyTheLogoIsDisplayedOrNotInHomePage" data-provider="login" finished-at="2023-08-22T20:50:06 IST" duration-ms="2392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheLogoIsDisplayedOrNotInHomePage -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:50:06 IST" name="afterMethod" finished-at="2023-08-22T20:50:06 IST" duration-ms="124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheLogoIsDisplayedOrNotInHomePage status=SUCCESS method=LoginPageTestClass.verifyTheLogoIsDisplayedOrNotInHomePage(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:50:06 IST" name="beforeMethod" finished-at="2023-08-22T20:50:13 IST" duration-ms="6488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnsuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:50:13 IST" name="verifyUnsuccessfullLogin" data-provider="dp" finished-at="2023-08-22T20:50:14 IST" duration-ms="1212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnsuccessfullLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:50:14 IST" name="afterMethod" finished-at="2023-08-22T20:50:14 IST" duration-ms="121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUnsuccessfullLogin status=SUCCESS method=LoginPageTestClass.verifyUnsuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:50:14 IST" name="beforeMethod" finished-at="2023-08-22T20:50:24 IST" duration-ms="9464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnsuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:50:24 IST" name="verifyUnsuccessfullLogin" data-provider="dp" finished-at="2023-08-22T20:50:25 IST" duration-ms="1273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnsuccessfullLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:50:25 IST" name="afterMethod" finished-at="2023-08-22T20:50:25 IST" duration-ms="186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUnsuccessfullLogin status=SUCCESS method=LoginPageTestClass.verifyUnsuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:50:25 IST" name="beforeMethod" finished-at="2023-08-22T20:50:31 IST" duration-ms="5752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnsuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:50:31 IST" name="verifyUnsuccessfullLogin" data-provider="dp" finished-at="2023-08-22T20:50:32 IST" duration-ms="1183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnsuccessfullLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff]" started-at="2023-08-22T20:50:32 IST" name="afterMethod" finished-at="2023-08-22T20:50:32 IST" duration-ms="137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUnsuccessfullLogin status=SUCCESS method=LoginPageTestClass.verifyUnsuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.LoginPageTestClass@7203c7ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.healthcare.executePageClasses.LoginPageTestClass -->
+      <class name="com.healthcare.executePageClasses.FindAPatientRecordTestClass">
+        <test-method is-config="true" signature="createExtendReport(org.testng.ITestContext)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:48:14 IST" name="createExtendReport" finished-at="2023-08-22T20:48:14 IST" duration-ms="23" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73839f22]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtendReport -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:48:15 IST" name="beforeMethod" finished-at="2023-08-22T20:48:24 IST" duration-ms="8764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:48:24 IST" name="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable" data-provider="login" finished-at="2023-08-22T20:48:30 IST" duration-ms="5916" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.healthcare.executePageClasses.FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(FindAPatientRecordTestClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:48:30 IST" name="afterMethod" finished-at="2023-08-22T20:48:30 IST" duration-ms="193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable status=SKIP method=FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:48:30 IST" name="beforeMethod" finished-at="2023-08-22T20:48:37 IST" duration-ms="6895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:48:37 IST" name="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable" data-provider="login" finished-at="2023-08-22T20:48:42 IST" duration-ms="5108" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.healthcare.executePageClasses.FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(FindAPatientRecordTestClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:48:42 IST" name="afterMethod" finished-at="2023-08-22T20:48:43 IST" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable status=SKIP method=FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:48:43 IST" name="beforeMethod" finished-at="2023-08-22T20:48:49 IST" duration-ms="6530" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:48:49 IST" name="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable" data-provider="login" finished-at="2023-08-22T20:48:54 IST" duration-ms="4855" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.healthcare.executePageClasses.FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(FindAPatientRecordTestClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:48:54 IST" name="afterMethod" finished-at="2023-08-22T20:48:54 IST" duration-ms="200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable status=SKIP method=FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:48:54 IST" name="beforeMethod" finished-at="2023-08-22T20:49:01 IST" duration-ms="6302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:49:01 IST" name="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable" data-provider="login" finished-at="2023-08-22T20:49:07 IST" duration-ms="6160" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.healthcare.executePageClasses.FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(FindAPatientRecordTestClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:49:07 IST" name="afterMethod" finished-at="2023-08-22T20:49:07 IST" duration-ms="148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable status=SKIP method=FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:49:07 IST" name="beforeMethod" finished-at="2023-08-22T20:49:17 IST" duration-ms="9689" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:49:17 IST" name="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable" data-provider="login" finished-at="2023-08-22T20:49:24 IST" duration-ms="7181" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.healthcare.executePageClasses.FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(FindAPatientRecordTestClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:49:24 IST" name="afterMethod" finished-at="2023-08-22T20:49:24 IST" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable status=SKIP method=FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:49:24 IST" name="beforeMethod" finished-at="2023-08-22T20:49:31 IST" duration-ms="6706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:49:31 IST" name="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable" data-provider="login" finished-at="2023-08-22T20:49:37 IST" duration-ms="6493" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.healthcare.executePageClasses.FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(FindAPatientRecordTestClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f]" started-at="2023-08-22T20:49:37 IST" name="afterMethod" finished-at="2023-08-22T20:49:38 IST" duration-ms="357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable status=FAILURE method=FindAPatientRecordTestClass.verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executePageClasses.FindAPatientRecordTestClass@4ff4357f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.healthcare.executePageClasses.FindAPatientRecordTestClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

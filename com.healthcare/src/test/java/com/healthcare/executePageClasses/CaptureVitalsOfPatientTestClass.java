@@ -9,6 +9,7 @@ import pageclasses.CaptureVitalOfPatientPageClass;
 import pageclasses.HomePageClass;
 import pageclasses.LoginPageClass;
 import pageclasses.RegisterAPatientPageClass;
+import retry.RetryAnalyzer;
 
 public class CaptureVitalsOfPatientTestClass extends BaseClass{
 	LoginPageClass lp;
@@ -16,7 +17,7 @@ public class CaptureVitalsOfPatientTestClass extends BaseClass{
 	RegisterAPatientPageClass rp;
 	CaptureVitalOfPatientPageClass cp;
 	
-  @Test(dataProviderClass=DataProviderClassOne.class,dataProvider="login")
+  @Test(dataProviderClass=DataProviderClassOne.class,dataProvider="login",retryAnalyzer = RetryAnalyzer.class)
   public void verifyAllAddVitalDetailsOfRegisteredPatient(String uname,String paswrd) throws IOException {
 	  
 	  	lp=new LoginPageClass(driver);

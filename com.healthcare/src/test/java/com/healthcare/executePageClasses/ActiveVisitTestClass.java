@@ -9,6 +9,7 @@ import pageclasses.ActiveVisitPageClass;
 import pageclasses.HomePageClass;
 import pageclasses.LoginPageClass;
 import pageclasses.RegisterAPatientPageClass;
+import retry.RetryAnalyzer;
 
 public class ActiveVisitTestClass extends BaseClass {
 	
@@ -18,7 +19,7 @@ public class ActiveVisitTestClass extends BaseClass {
 	RegisterAPatientPageClass rp;
 	ActiveVisitPageClass av;
 	
-  @Test(dataProviderClass=DataProviderClassOne.class,dataProvider="login")
+  @Test(dataProviderClass=DataProviderClassOne.class,dataProvider="login",retryAnalyzer = RetryAnalyzer.class)
   public void verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(String uName,String paswrd) throws IOException {
 	  	
 	  	lp=new LoginPageClass(driver);
@@ -62,7 +63,7 @@ public class ActiveVisitTestClass extends BaseClass {
 		Assert.assertFalse(actualResult);
 		}
   
-  @Test(dataProviderClass=DataProviderClassOne.class,dataProvider="login")
+  @Test(dataProviderClass=DataProviderClassOne.class,dataProvider="login",retryAnalyzer = RetryAnalyzer.class)
   public void verifyThePatientIsInActiveVisitsWhenVisitStarts(String uname,String paswrd) throws IOException {
 	
 	  	lp=new LoginPageClass(driver);
